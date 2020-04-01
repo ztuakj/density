@@ -7,7 +7,7 @@ Group:          DevOps
 BuildArch:      noarch
 License:        GPL
 URL:            https://github.com/ztuakj/density#density-on-prem-homework-assignment
-Source0:        app_a.py
+Source0:        app_a-1.0.tar.gz
 
 %description
 Write some description about your package here
