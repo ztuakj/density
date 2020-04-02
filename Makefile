@@ -3,3 +3,7 @@ setup:
 build:
 	rpmbuild -bb SPECS/app_a.spec
 	rpmbuild -bb SPECS/app_b.spec
+clean:
+	rm SOURCES/app_*gz
+	rm -rf BUILD
+	rm -rf BUILDROOT
