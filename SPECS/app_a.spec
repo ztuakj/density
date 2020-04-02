@@ -21,11 +21,13 @@ Write some description about your package here
 install -m 0755 -d $RPM_BUILD_ROOT/opt/density
 install -m 0755 -d $RPM_BUILD_ROOT/opt/density/etc/init.d
 install -m 0755 app_a.py $RPM_BUILD_ROOT/opt/density/app_a.py
+install -m 0755 schema.sql $RPM_BUILD_ROOT/opt/density/schema.sql
 install -m 0755 app_a.init $RPM_BUILD_ROOT/opt/density/etc/init.d/app_a.init
 
 %files
 /opt/density
 /opt/density/app_a.py
+/opt/density/schema.sql
 /opt/density/etc/init.d/app_a.init
 
 %changelog
