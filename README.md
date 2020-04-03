@@ -6,7 +6,9 @@ ln -s ~/density ~/rpmbuild
 
 Edit OS version in Dockerfile and Makefile
 
+
 make all
+
 vagrant up
 
 Making a request
