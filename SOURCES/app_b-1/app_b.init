@@ -1,24 +1,29 @@
 #!/bin/bash
 #
-# app_a
+# app_b
 #
 # chkconfig: 345 70 30
-# description: density hw app_a
-# processname: app_a
+# description: density hw app_b
+# processname: app_b
 
 # Source function library.
-. /etc/init.d/functions
+#. /etc/init.d/functions
 
 RETVAL=0
-NAME="app_a"
+NAME="app_b"
 PIDFILE=/var/run/$NAME
+OS_VER=`grep -o '[[:digit:]]' /etc/redhat-release | head -1`
 
 start() {
         echo -n "Starting $NAME: "
         if [ ! -f /opt/density/database.db ]; then
 	  sqlite3 /opt/density/database.db < /opt/density/schema.sql
 	fi
-        python /opt/density/app_b.py
+	if [ $OS_VER -lt 8 ]; then
+	  python /opt/density/app_b.py
+	else
+	  python3 /opt/density/app_b.py
+	fi
         RETVAL=$?
         [ $RETVAL -eq 0 ] && touch $PIDFILE
         echo
