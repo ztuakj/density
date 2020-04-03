@@ -13,11 +13,10 @@ make all
 
 vagrant up (or docker build)
 
-Making a request
+You can log into the docker container and make a request:
 ```
 curl -X POST -H 'Authorization: mytoken' http://127.0.0.1:5000/jobs
 ```
-
 ## Updates
 major.minor[.maintenance[.build]]
 
