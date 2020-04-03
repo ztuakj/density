@@ -1,6 +1,8 @@
 # Density On Prem Homework Assignment
 
 ## Build
+make all
+## Test
 You'll need to install: docker, vagrant (optional), rpmbuild
 
 This directory must be symlinked to a rpmbuild:
