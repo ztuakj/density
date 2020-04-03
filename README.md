@@ -1,6 +1,8 @@
 # Density On Prem Homework Assignment
 
 ## Build
+You'll need to install: docker, vagrant (optional), rpmbuild
+
 This directory must be symlinked to a rpmbuild:
 ln -s ~/density ~/rpmbuild
 
@@ -9,7 +11,7 @@ Edit OS version in Dockerfile and Makefile
 
 make all
 
-vagrant up
+vagrant up (or docker build)
 
 Making a request
 ```
