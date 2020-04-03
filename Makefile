@@ -1,3 +1,4 @@
+#build[6-8] refers to OS version
 all: setup build8
 setup:
 	cd ./SOURCES;tar cfz app_a-1.0.tar.gz app_a-1;tar cfz app_b-1.0.tar.gz app_b-1
