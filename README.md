@@ -28,5 +28,4 @@ curl -X POST -H 'Authorization: mytoken' http://127.0.0.1:5000/jobs
 major.minor[.maintenance[.build]]
 
 ## Client Delivery
-The rpm can be installed via a repository hosted remotely by us or installed locally with provided checksum.
-
+The rpm can be installed via a repository hosted remotely by us or installed locally with provided checksum. Tools needed to support remotely are included on any Linux OS.
