@@ -18,7 +18,7 @@ Edit OS version in Dockerfile and Makefile
 ```
 $make all
 
-$vagrant up #or docker build
+$vagrant up #or docker build ...or edit Vagrantfile for custom provider
 ```
 You can log into the docker container and make a request:
 ```
